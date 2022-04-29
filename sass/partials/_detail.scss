@@ -1,0 +1,55 @@
+.detail-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background: getColour(third-color);
+  position: relative;
+  top: 20px;
+  padding-top: 1px;
+}
+
+.detail-head {
+  color: getColour(further-secondary-color);
+  text-align: center;
+  font-size: 34px;
+}
+
+.detail-picture {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+.detail-content {
+  max-width: 300px;
+}
+.detail--content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 100px;
+  padding-bottom: 34px;
+  max-width: 700px;
+}
+
+.detail-description {
+  position: relative;
+  bottom: 32px;
+}
+
+.detail-btn {
+  border: 3px solid getColour(primary-color);
+  background: getColour(primary-color);
+  color: getColour(fourth-color);
+  width: 209px;
+  height: 35px;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 21px;
+  position: relative;
+  bottom: 37px;
+  &:hover {
+    color: getColour(fourth-color);
+    background: getColour(third-color);
+  }
+}

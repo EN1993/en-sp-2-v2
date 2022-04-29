@@ -1,0 +1,39 @@
+.price input,
+.name input,
+.file input {
+  width: 293px;
+  height: 35px;
+}
+.add-head {
+  color: getColour(secondary-color);
+  text-align: center;
+  font-size: 34px;
+}
+
+#addForm {
+  color: getColour(third-color);
+}
+.description textarea {
+  width: 293px;
+}
+
+.add-container {
+  width: 300px;
+
+  margin: 2px auto;
+}
+
+.add-product-btn {
+  margin: 10px 0px;
+  border: 3px solid getColour(primary-color);
+  background: getColour(primary-color);
+  color: getColour(fourth-color);
+  width: 150px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 21px;
+  &:hover {
+    color: getColour(fourth-color);
+    background: getColour(third-color);
+  }
+}

@@ -1,0 +1,156 @@
+header {
+  background: getColour(header-background);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+  height: 80px;
+}
+
+nav {
+  display: none;
+  position: fixed;
+  background: getColour(fourth-color);
+  top: 70px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    position: static;
+    justify-content: space-evenly;
+  }
+}
+
+nav li {
+  display: block;
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    position: relative;
+  }
+}
+
+li a {
+  text-decoration: none;
+  color: getColour(third-color);
+  font-size: 20px;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  &:hover {
+    color: getColour(primary-color);
+  }
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
+}
+.active {
+  font-size: 28px;
+  color: getColour(primary-color);
+  i,
+  span {
+    color: inherit;
+  }
+}
+
+.logo img {
+  height: 79px;
+  display: none;
+}
+
+#hamburger-menu {
+  display: none;
+}
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+.fa-bars {
+  color: getColour(third-color);
+  font-size: 40px;
+}
+
+.fa-user-circle {
+  @extend .fas-Common;
+  font-size: 30px;
+}
+
+.fas-Common {
+  cursor: pointer;
+  &:hover {
+    color: getColour(primary-color);
+  }
+}
+.fa-shopping-basket {
+  @extend .fas-Common;
+  font-size: 24px;
+}
+.fa-search {
+  font-size: 20px;
+  position: relative;
+  right: 24px;
+  bottom: -5px;
+  color: getColour(primary-color);
+}
+i.fa-search {
+  display: none;
+}
+#searchInput {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  display: none;
+}
+
+#searchInput {
+  width: 118px;
+  height: 27px;
+  border: none;
+  border-bottom: 2px solid getColour(fourth-color);
+}
+
+@media (min-width: $tablet-width) {
+  header label {
+    display: none;
+  }
+
+  nav {
+    background: getColour(header-background);
+  }
+
+  li a {
+    padding: 10px 10px;
+  }
+  .active {
+    font-size: 20px;
+  }
+
+  .logo img {
+    height: 50px;
+    display: block;
+    margin-left: 60px;
+  }
+
+  #searchInput {
+    display: inline;
+  }
+  #searchInput {
+    margin-left: 60px;
+    margin-top: 0px;
+    position: relative;
+    bottom: 6px;
+  }
+
+  .fa-search {
+    bottom: 2px;
+    color: getColour(primary-color);
+  }
+
+  i.fa-search {
+    display: inline;
+  }
+}

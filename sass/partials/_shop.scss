@@ -1,0 +1,54 @@
+.shop-head {
+  color: getColour(further-secondary-color);
+  text-align: center;
+  font-size: 34px;
+}
+
+h4 {
+  color: getColour(further-secondary-color);
+}
+
+.shop-price {
+  position: relative;
+  bottom: 22px;
+  font-size: 18px;
+}
+
+.shop-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  background: getColour(third-color);
+  position: relative;
+  top: 20px;
+  padding-top: 1px;
+}
+
+.shop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 100px;
+  padding-bottom: 34px;
+}
+
+.view-more-btn {
+  color: getColour(third-color);
+  width: 300px;
+  height: 95px;
+  font-weight: bold;
+  font-size: 30px;
+  position: relative;
+  top: 205px;
+  display: none;
+  background: getColour(fourth-color);
+  opacity: 0.4;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.shop-content:hover {
+  .view-more-btn {
+    display: block;
+  }
+}

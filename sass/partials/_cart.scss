@@ -1,0 +1,78 @@
+.cart-container {
+  padding-top: 19px;
+}
+
+.cart-head {
+  color: getColour(secondary-color);
+  text-align: center;
+  font-size: 34px;
+}
+
+.cart {
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3px;
+  margin: 0 auto;
+}
+
+.cart-content {
+  width: 300px;
+  min-height: 100px;
+  background: getColour(third-color);
+}
+
+.basket-count {
+  display: inline;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: red;
+  color: getColour(third-color);
+}
+
+.cart-picture {
+  width: 90px;
+  height: 90px;
+  background-size: cover;
+  background-position: center;
+}
+
+.cart-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.cart-content-item {
+  margin: -18px 0px 0px 0px;
+}
+
+.cart-price {
+  margin-top: -11px;
+}
+.grand-tot {
+  position: relative;
+  top: 3rem;
+  right: 6rem;
+}
+.view-more-cart-btn {
+  border: 3px solid getColour(primary-color);
+  background: getColour(primary-color);
+  color: getColour(fourth-color);
+  font-weight: bold;
+  font-size: 17px;
+  position: relative;
+  bottom: 9px;
+  text-decoration: none;
+  padding: 2px 7px;
+  &:hover {
+    color: getColour(fourth-color);
+    background: getColour(third-color);
+  }
+}
+
+.fa-trash {
+  background: green;
+}

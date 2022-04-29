@@ -1,0 +1,51 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: getColour(fourth-color);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.wrapper {
+  flex: 1 0 auto;
+}
+
+main {
+  margin-top: 80px;
+}
+
+.message {
+  max-width: 300px;
+  padding: 2rem;
+  margin: 0 auto;
+  border: 1px solid getColour(fourth-color);
+  color: getColour(fourth-color);
+}
+
+.message.error {
+  border-color: red;
+  color: getColour(third-color);
+  background: red;
+}
+
+.message.warning {
+  border-color: orange;
+  color: getColour(third-color);
+  background: orange;
+}
+
+.message.success {
+  border-color: green;
+  color: getColour(third-color);
+  background: green;
+}
+
+
